@@ -1,0 +1,746 @@
+2021-02-02 07:06:42,622 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-02-02 07:06:42,962 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 07:06:42,966 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 07:06:43,622 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-02 07:06:43,623 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-02 07:06:52,371 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 07:06:52,467 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:06:52,470 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 07:06:52,471 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 07:06:53,015 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 07:06:53,016 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 9391 ms
+2021-02-02 07:06:55,580 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:06:58,583 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 07:06:58,619 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:06:58,736 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 07:06:58,796 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 19.549 seconds (JVM running for 23.803)
+2021-02-02 07:07:53,844 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 07:07:53,845 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-02 07:07:53,847 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-02-02 07:07:55,018 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-1] Init duration for springdoc-openapi is: 1066 ms
+2021-02-02 07:13:50,761 INFO com.oracle.vendingmachine.repository.CoinRepository [http-nio-8080-exec-2] With draw coins details -> {FIVEPOUND=10}
+2021-02-02 07:13:50,764 INFO com.oracle.vendingmachine.repository.CoinRepository [http-nio-8080-exec-2] Coin inventory status after withdrawl coins -> {TWOPOUND=300, ONEPOUND=100, FIVEPOUND=490}
+2021-02-02 07:15:09,939 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.oracle.vendingmachine.apimodel.RegisterCoinsResponse> com.oracle.vendingmachine.controller.VendingMachineController.registerCoins(com.oracle.vendingmachine.apimodel.RegisterCoinsRequest): [Field error in object 'registerCoinsRequest' on field 'registerCoinsDetails': rejected value [null]; codes [NotEmpty.registerCoinsRequest.registerCoinsDetails,NotEmpty.registerCoinsDetails,NotEmpty.java.util.List,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerCoinsRequest.registerCoinsDetails,registerCoinsDetails]; arguments []; default message [registerCoinsDetails]]; default message [register coins details field required]] ]
+2021-02-02 07:16:00,203 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.oracle.vendingmachine.apimodel.RegisterCoinsResponse> com.oracle.vendingmachine.controller.VendingMachineController.registerCoins(com.oracle.vendingmachine.apimodel.RegisterCoinsRequest): [Field error in object 'registerCoinsRequest' on field 'registerCoinsDetails[0].quantity': rejected value [0]; codes [Min.registerCoinsRequest.registerCoinsDetails[0].quantity,Min.registerCoinsRequest.registerCoinsDetails.quantity,Min.registerCoinsDetails[0].quantity,Min.registerCoinsDetails.quantity,Min.quantity,Min.java.lang.Integer,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerCoinsRequest.registerCoinsDetails[0].quantity,registerCoinsDetails[0].quantity]; arguments []; default message [registerCoinsDetails[0].quantity],1]; default message [must be greater than or equal to 1]] ]
+2021-02-02 07:16:57,959 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-6] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:16:58,295 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 07:16:58,296 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 07:16:59,385 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 07:16:59,388 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:16:59,393 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 07:16:59,394 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 07:16:59,427 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 07:16:59,428 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1120 ms
+2021-02-02 07:16:59,602 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:17:00,802 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 07:17:00,819 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:17:00,827 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 07:17:00,839 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 2.631 seconds (JVM running for 625.846)
+2021-02-02 07:17:00,850 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 07:20:13,177 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-9] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 07:20:13,178 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-9] Initializing Servlet 'dispatcherServlet'
+2021-02-02 07:20:13,180 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-9] Completed initialization in 1 ms
+2021-02-02 07:20:13,274 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-9] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.oracle.vendingmachine.apimodel.InventorySetupResponse> com.oracle.vendingmachine.controller.VendingMachineController.initialCoinInventorySetup(com.oracle.vendingmachine.apimodel.InventorySetupRequest): [Field error in object 'inventorySetupRequest' on field 'inventorySetup[0].quantity': rejected value [0]; codes [Min.inventorySetupRequest.inventorySetup[0].quantity,Min.inventorySetupRequest.inventorySetup.quantity,Min.inventorySetup[0].quantity,Min.inventorySetup.quantity,Min.quantity,Min.java.lang.Integer,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [inventorySetupRequest.inventorySetup[0].quantity,inventorySetup[0].quantity]; arguments []; default message [inventorySetup[0].quantity],1]; default message [must be greater than or equal to 1]] ]
+2021-02-02 07:21:23,462 INFO com.oracle.vendingmachine.service.VendingMachineServiceImpl [http-nio-8080-exec-4] CoinInventoryStatusResponse [coinInventory=[CoinInventory [coin=TWOPOUND, quantity=10], CoinInventory [coin=ONEPOUND, quantity=10]], status=success]
+2021-02-02 07:24:00,524 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:24:00,908 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 07:24:00,909 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 07:24:01,606 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 07:24:01,607 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:24:01,608 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 07:24:01,608 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 07:24:01,646 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 07:24:01,646 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 729 ms
+2021-02-02 07:24:01,805 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:24:02,754 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 07:24:02,770 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:24:02,802 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 07:24:02,813 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 1.998 seconds (JVM running for 1047.821)
+2021-02-02 07:24:02,818 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 07:24:16,050 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-14] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:24:16,772 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 07:24:16,773 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 07:24:17,463 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 07:24:17,465 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:24:17,466 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 07:24:17,467 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 07:24:17,542 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 07:24:17,544 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 759 ms
+2021-02-02 07:24:17,686 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:24:18,763 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 07:24:18,781 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:24:18,789 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 07:24:18,805 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 2.25 seconds (JVM running for 1063.811)
+2021-02-02 07:24:18,815 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 07:24:24,485 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 07:24:24,486 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-02 07:24:24,487 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2021-02-02 07:24:24,502 INFO com.oracle.vendingmachine.repository.CoinRepository [http-nio-8080-exec-1] With draw coins details -> {FIVEPOUND=10}
+2021-02-02 07:24:24,508 INFO com.oracle.vendingmachine.repository.CoinRepository [http-nio-8080-exec-1] Coin inventory status after withdrawl coins -> {TWOPOUND=300, FIVEPOUND=490, ONEPOUND=100}
+2021-02-02 07:34:51,250 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-19] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:34:52,194 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 07:34:52,195 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 07:34:53,262 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 07:34:53,263 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:34:53,266 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 07:34:53,267 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 07:34:53,312 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 07:34:53,312 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1102 ms
+2021-02-02 07:34:53,539 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:34:54,863 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 07:34:54,879 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:34:54,890 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 07:34:54,919 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 3.142 seconds (JVM running for 1699.927)
+2021-02-02 07:34:54,999 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 07:35:15,952 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 07:35:15,953 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-02 07:35:15,955 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-02-02 07:37:54,761 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-24] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:37:55,180 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 07:37:55,182 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 07:37:56,139 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 07:37:56,141 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:37:56,142 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 07:37:56,142 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 07:37:56,190 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 07:37:56,190 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 996 ms
+2021-02-02 07:37:56,387 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:37:57,370 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 07:37:57,381 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:37:57,404 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 07:37:57,413 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 2.385 seconds (JVM running for 1882.421)
+2021-02-02 07:37:57,427 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 07:38:09,046 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 07:38:09,047 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-02 07:38:09,048 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2021-02-02 07:42:23,985 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-29] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:42:24,338 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 07:42:24,339 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 07:42:25,224 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 07:42:25,229 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:42:25,232 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 07:42:25,234 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 07:42:25,273 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 07:42:25,274 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 925 ms
+2021-02-02 07:42:25,739 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:42:27,179 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 07:42:27,193 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:42:27,204 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 07:42:27,249 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 3.034 seconds (JVM running for 2152.254)
+2021-02-02 07:42:27,258 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 07:42:49,539 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at org.springframework.web.util.UrlPathHelper.getSanitizedPath(UrlPathHelper.java:409)
+	at org.springframework.web.util.UrlPathHelper.decodeAndCleanUriString(UrlPathHelper.java:550)
+	at org.springframework.web.util.UrlPathHelper.getOriginatingRequestUri(UrlPathHelper.java:495)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.addContentDispositionHeader(AbstractMessageConverterMethodProcessor.java:423)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:275)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:124)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-02-02 07:42:49,572 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-3] Error processing request
+java.lang.NullPointerException: null
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:412)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-02-02 07:42:49,574 WARN org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-3] Exception while attempting to add an entry to the access log
+java.lang.NullPointerException: null
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:490)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:404)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-02-02 07:43:31,407 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 07:43:31,408 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-02 07:43:31,410 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-02-02 07:43:31,425 INFO com.oracle.vendingmachine.repository.CoinRepository [http-nio-8080-exec-1] With draw coins details -> {FIVEPOUND=10}
+2021-02-02 07:43:31,432 INFO com.oracle.vendingmachine.repository.CoinRepository [http-nio-8080-exec-1] Coin inventory status after withdrawl coins -> {TWOPOUND=300, FIVEPOUND=490, ONEPOUND=100}
+2021-02-02 07:47:10,823 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-34] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:47:11,230 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 07:47:11,231 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 07:47:12,072 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 07:47:12,075 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:47:12,076 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 07:47:12,077 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 07:47:12,133 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 07:47:12,133 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 893 ms
+2021-02-02 07:47:12,540 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:47:13,129 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 07:47:13,136 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:47:13,149 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 07:47:13,161 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 2.139 seconds (JVM running for 2438.169)
+2021-02-02 07:47:13,167 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 07:47:18,693 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 07:47:18,694 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-02 07:47:18,695 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2021-02-02 07:53:15,025 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-39] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:53:15,354 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 07:53:15,355 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 07:53:15,969 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 07:53:15,975 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:53:15,976 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 07:53:15,977 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 07:53:16,090 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 07:53:16,090 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 726 ms
+2021-02-02 07:53:16,551 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:53:17,289 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 07:53:17,317 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:53:17,325 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 07:53:17,329 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 2.063 seconds (JVM running for 2802.337)
+2021-02-02 07:53:17,332 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 07:53:28,702 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-10] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 07:53:28,704 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Initializing Servlet 'dispatcherServlet'
+2021-02-02 07:53:28,706 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Completed initialization in 1 ms
+2021-02-02 07:53:29,586 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-4] Init duration for springdoc-openapi is: 197 ms
+2021-02-02 07:55:06,114 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-44] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:55:06,407 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 07:55:06,408 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 07:55:06,941 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 07:55:06,943 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:55:06,944 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 07:55:06,945 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 07:55:06,983 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 07:55:06,983 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 564 ms
+2021-02-02 07:55:07,080 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:55:07,782 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 07:55:07,853 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:55:07,862 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 07:55:07,877 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 1.555 seconds (JVM running for 2912.884)
+2021-02-02 07:55:07,881 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 07:55:09,198 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-10] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 07:55:09,201 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Initializing Servlet 'dispatcherServlet'
+2021-02-02 07:55:09,202 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Completed initialization in 0 ms
+2021-02-02 07:55:09,796 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-7] Init duration for springdoc-openapi is: 123 ms
+2021-02-02 07:57:47,690 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-49] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:57:48,340 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 07:57:48,341 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 07:57:49,097 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 07:57:49,098 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:57:49,099 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 07:57:49,099 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 07:57:49,125 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 07:57:49,126 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 776 ms
+2021-02-02 07:57:49,224 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 07:57:49,744 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 07:57:49,773 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 07:57:49,789 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 07:57:49,803 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 1.606 seconds (JVM running for 3074.81)
+2021-02-02 07:57:49,806 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 07:57:52,484 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 07:57:52,487 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-02-02 07:57:52,489 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2021-02-02 07:57:52,961 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-5] Init duration for springdoc-openapi is: 178 ms
+2021-02-02 08:01:18,272 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-54] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:01:18,667 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 08:01:18,668 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 08:01:19,343 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 08:01:19,344 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:01:19,344 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 08:01:19,345 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 08:01:19,380 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 08:01:19,381 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 706 ms
+2021-02-02 08:01:19,546 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:01:20,478 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 08:01:20,502 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:01:20,521 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 08:01:20,623 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 2.038 seconds (JVM running for 3285.631)
+2021-02-02 08:01:20,625 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 08:01:20,754 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 08:01:20,755 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-02 08:01:20,757 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-02-02 08:01:21,794 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-7] Init duration for springdoc-openapi is: 293 ms
+2021-02-02 08:07:37,830 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-59] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:07:38,115 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 08:07:38,116 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 08:07:38,601 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 08:07:38,602 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:07:38,602 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 08:07:38,602 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 08:07:38,625 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 08:07:38,626 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 504 ms
+2021-02-02 08:07:38,709 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:07:39,202 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 08:07:39,211 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:07:39,218 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 08:07:39,223 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 1.169 seconds (JVM running for 3664.23)
+2021-02-02 08:07:39,230 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 08:11:15,656 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-64] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:11:15,918 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 08:11:15,919 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 08:11:16,642 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 08:11:16,643 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:11:16,644 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 08:11:16,644 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 08:11:16,671 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 08:11:16,672 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 744 ms
+2021-02-02 08:11:16,809 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:11:17,852 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 08:11:17,868 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:11:17,876 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 08:11:17,884 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 2.065 seconds (JVM running for 3882.892)
+2021-02-02 08:11:18,030 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 08:11:19,301 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 08:11:19,304 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-02 08:11:19,306 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-02-02 08:11:20,127 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-7] Init duration for springdoc-openapi is: 165 ms
+2021-02-02 08:17:54,195 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-69] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:17:54,568 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 08:17:54,569 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 08:17:55,256 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 08:17:55,257 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:17:55,257 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 08:17:55,258 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 08:17:55,294 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 08:17:55,295 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 718 ms
+2021-02-02 08:17:55,547 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:17:56,918 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 08:17:57,005 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:17:57,060 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 08:17:57,069 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 2.59 seconds (JVM running for 4282.076)
+2021-02-02 08:17:57,072 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 08:18:01,559 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-10] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 08:18:01,560 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Initializing Servlet 'dispatcherServlet'
+2021-02-02 08:18:01,562 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Completed initialization in 1 ms
+2021-02-02 08:20:48,191 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-74] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:20:48,546 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 08:20:48,547 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 08:20:49,382 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 08:20:49,383 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:20:49,384 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 08:20:49,384 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 08:20:49,417 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 08:20:49,417 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 860 ms
+2021-02-02 08:20:49,659 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:20:50,869 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 08:20:50,891 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:20:50,918 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 08:20:50,966 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 2.589 seconds (JVM running for 4455.974)
+2021-02-02 08:20:50,974 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 08:20:55,615 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 08:20:55,617 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-02 08:20:55,619 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-02-02 08:22:09,066 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-79] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:22:09,408 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 08:22:09,408 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 08:22:09,896 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 08:22:09,898 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:22:09,899 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 08:22:09,900 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 08:22:09,930 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 08:22:09,930 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 515 ms
+2021-02-02 08:22:10,028 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:22:10,563 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 08:22:10,573 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:22:10,583 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 08:22:10,596 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 1.253 seconds (JVM running for 4535.604)
+2021-02-02 08:22:10,601 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 08:22:15,127 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 08:22:15,129 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-02 08:22:15,130 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2021-02-02 08:27:17,714 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-84] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:27:17,947 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 08:27:17,948 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 08:27:18,449 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 08:27:18,452 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:27:18,453 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 08:27:18,453 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 08:27:18,480 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 08:27:18,481 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 526 ms
+2021-02-02 08:27:18,644 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:27:19,278 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 08:27:19,291 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:27:19,304 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 08:27:19,308 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 1.446 seconds (JVM running for 4844.316)
+2021-02-02 08:27:19,310 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 08:27:53,073 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-89] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:27:53,358 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 08:27:53,359 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 08:27:53,833 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 08:27:53,834 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:27:53,834 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 08:27:53,835 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 08:27:53,867 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 08:27:53,867 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 501 ms
+2021-02-02 08:27:54,053 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:27:54,797 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 08:27:54,813 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:27:54,820 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 08:27:54,825 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 1.547 seconds (JVM running for 4879.832)
+2021-02-02 08:27:54,842 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 08:28:14,688 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-94] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:28:15,005 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 08:28:15,006 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 08:28:15,964 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 08:28:15,965 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:28:15,966 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 08:28:15,967 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 08:28:15,990 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 08:28:15,991 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 969 ms
+2021-02-02 08:28:16,108 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:28:16,733 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 08:28:16,752 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:28:16,761 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 08:28:16,772 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 1.869 seconds (JVM running for 4901.78)
+2021-02-02 08:28:16,781 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 08:28:18,420 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 08:28:18,423 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-02 08:28:18,424 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-02-02 08:29:00,344 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-99] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:29:00,666 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 08:29:00,667 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 08:29:01,574 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 08:29:01,576 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:29:01,576 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 08:29:01,576 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 08:29:01,611 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 08:29:01,611 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 927 ms
+2021-02-02 08:29:01,729 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:29:02,184 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 08:29:02,195 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:29:02,203 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 08:29:02,207 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 1.647 seconds (JVM running for 4947.215)
+2021-02-02 08:29:02,210 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 08:29:05,484 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 08:29:05,488 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-02 08:29:05,489 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-02-02 08:29:35,340 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-104] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:29:35,724 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 08:29:35,725 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 08:29:36,248 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 08:29:36,250 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:29:36,251 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 08:29:36,252 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 08:29:36,284 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 08:29:36,285 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 540 ms
+2021-02-02 08:29:36,458 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:29:37,193 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 08:29:37,205 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:29:37,213 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 08:29:37,220 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 1.621 seconds (JVM running for 4982.228)
+2021-02-02 08:29:37,223 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 08:29:38,030 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 08:29:38,032 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-02 08:29:38,033 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2021-02-02 08:30:07,368 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-109] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:30:07,681 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 08:30:07,682 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 08:30:08,169 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 08:30:08,170 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:30:08,170 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 08:30:08,170 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 08:30:08,192 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 08:30:08,192 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 503 ms
+2021-02-02 08:30:08,267 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:30:08,756 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 08:30:08,767 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:30:08,794 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 08:30:08,806 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 1.211 seconds (JVM running for 5013.813)
+2021-02-02 08:30:08,807 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 08:32:27,215 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-114] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:32:27,853 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 08:32:27,853 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 08:32:28,899 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 08:32:28,901 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:32:28,902 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 08:32:28,902 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 08:32:28,935 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 08:32:28,936 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1076 ms
+2021-02-02 08:32:29,242 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:32:30,308 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 08:32:30,343 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:32:30,352 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 08:32:30,360 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 2.695 seconds (JVM running for 5155.367)
+2021-02-02 08:32:30,365 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 08:32:35,919 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 08:32:35,921 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-02 08:32:35,923 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-02-02 08:35:40,760 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-119] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:35:41,153 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 12732 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 08:35:41,154 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 08:35:41,756 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 08:35:41,757 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:35:41,757 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 08:35:41,757 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 08:35:41,784 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 08:35:41,784 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 619 ms
+2021-02-02 08:35:41,941 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 08:35:42,584 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 08:35:42,603 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 08:35:42,621 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 08:35:42,632 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 1.588 seconds (JVM running for 5347.639)
+2021-02-02 08:35:42,633 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 08:35:42,739 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 08:35:42,742 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-02-02 08:35:42,744 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-02-02 08:35:47,010 ERROR com.oracle.vendingmachine.service.VendingMachineServiceImpl [http-nio-8080-exec-6]  DispenseCoin Request is not valid request
+2021-02-02 08:35:47,041 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-6] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at org.springframework.web.util.UrlPathHelper.getSanitizedPath(UrlPathHelper.java:409)
+	at org.springframework.web.util.UrlPathHelper.decodeAndCleanUriString(UrlPathHelper.java:550)
+	at org.springframework.web.util.UrlPathHelper.getOriginatingRequestUri(UrlPathHelper.java:495)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.addContentDispositionHeader(AbstractMessageConverterMethodProcessor.java:423)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:275)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:124)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-02-02 08:35:47,050 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-6] Error processing request
+java.lang.NullPointerException: null
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:412)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-02-02 08:35:47,052 WARN org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-6] Exception while attempting to add an entry to the access log
+java.lang.NullPointerException: null
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:490)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:404)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-02-02 08:35:49,654 ERROR com.oracle.vendingmachine.service.VendingMachineServiceImpl [http-nio-8080-exec-1]  DispenseCoin Request is not valid request
+2021-02-02 08:36:13,501 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-8] Init duration for springdoc-openapi is: 133 ms
+2021-02-02 14:42:25,403 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-02-02 14:42:25,463 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 11648 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 14:42:25,464 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 14:42:25,677 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-02 14:42:25,679 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-02 14:42:29,653 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 14:42:29,687 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 14:42:29,689 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 14:42:29,691 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 14:42:29,922 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 14:42:29,923 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4242 ms
+2021-02-02 14:42:30,713 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 14:42:33,361 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 14:42:33,403 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 14:42:33,481 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 14:42:33,516 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 9.679 seconds (JVM running for 11.881)
+2021-02-02 14:43:07,321 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-02 14:43:07,325 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-3] Initializing Servlet 'dispatcherServlet'
+2021-02-02 14:43:07,327 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-3] Completed initialization in 1 ms
+2021-02-02 14:43:09,563 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-7] Init duration for springdoc-openapi is: 1070 ms
+2021-02-02 14:43:39,148 INFO com.oracle.vendingmachine.service.VendingMachineServiceImpl [http-nio-8080-exec-4] CoinInventoryStatusResponse [coinInventory=[CoinInventory [coin=FIVEPOUND, quantity=500], CoinInventory [coin=TWOPOUND, quantity=300], CoinInventory [coin=ONEPOUND, quantity=100]], status=success]
+2021-02-02 14:44:49,643 INFO com.oracle.vendingmachine.repository.CoinRepository [http-nio-8080-exec-6] With draw coins details -> {FIVEPOUND=6}
+2021-02-02 14:44:49,646 INFO com.oracle.vendingmachine.repository.CoinRepository [http-nio-8080-exec-6] Coin inventory status after withdrawl coins -> {FIVEPOUND=494, TWOPOUND=300, ONEPOUND=100}
+2021-02-02 14:45:12,575 INFO com.oracle.vendingmachine.service.VendingMachineServiceImpl [http-nio-8080-exec-5] CoinInventoryStatusResponse [coinInventory=[CoinInventory [coin=FIVEPOUND, quantity=494], CoinInventory [coin=TWOPOUND, quantity=300], CoinInventory [coin=ONEPOUND, quantity=100]], status=success]
+2021-02-02 15:36:02,427 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-6] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 15:36:02,990 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting VendingmachineApplication using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 11648 (C:\kareem\Oracle\vendingmachine\target\classes started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 15:36:02,991 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-02-02 15:36:04,306 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-02-02 15:36:04,308 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-02-02 15:36:04,309 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-02-02 15:36:04,310 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-02 15:36:04,344 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-02-02 15:36:04,345 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1337 ms
+2021-02-02 15:36:04,543 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 15:36:05,713 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-02-02 15:36:05,740 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-02-02 15:36:05,749 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-02 15:36:05,779 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started VendingmachineApplication in 3.027 seconds (JVM running for 3224.143)
+2021-02-02 15:36:05,792 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-02-02 16:29:24,976 INFO org.springframework.boot.StartupInfoLogger [main] Starting CoinInventoryStatusTests using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 2284 (started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 16:29:24,983 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-02 16:29:25,000 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-02-02 16:29:28,436 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 16:29:30,770 INFO org.springframework.boot.StartupInfoLogger [main] Started CoinInventoryStatusTests in 6.599 seconds (JVM running for 9.583)
+2021-02-02 16:29:31,556 INFO com.oracle.vendingmachine.CoinInventoryStatusTests [main] Test case to display coin inventory status
+2021-02-02 16:29:31,559 INFO com.oracle.vendingmachine.service.VendingMachineServiceImpl [main] CoinInventoryStatusResponse [coinInventory=[CoinInventory [coin=FIVEPOUND, quantity=500], CoinInventory [coin=ONEPOUND, quantity=100], CoinInventory [coin=TWOPOUND, quantity=300]], status=success]
+2021-02-02 16:29:31,588 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.oracle.vendingmachine.DispenceCoinServiceTests], using SpringBootContextLoader
+2021-02-02 16:29:31,589 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.oracle.vendingmachine.DispenceCoinServiceTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-02 16:29:31,590 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.oracle.vendingmachine.DispenceCoinServiceTests]: DispenceCoinServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-02-02 16:29:31,594 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.oracle.vendingmachine.VendingmachineApplication for test class com.oracle.vendingmachine.DispenceCoinServiceTests
+2021-02-02 16:29:31,599 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-02-02 16:29:31,602 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@16a9eb2e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@76332405, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@187e5235, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d1d8e1a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5434e40c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3b48e183, org.springframework.test.context.event.EventPublishingTestExecutionListener@514de325, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@30c1da48, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@43a65cd8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3f1ef9d6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@17461db, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3fd9e827, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4e682398]
+2021-02-02 16:29:31,611 INFO com.oracle.vendingmachine.DispenceCoinServiceTests [main] Test case where user provide input £0 
+2021-02-02 16:29:31,613 ERROR com.oracle.vendingmachine.service.VendingMachineServiceImpl [main]  DispenseCoin Request is not valid request
+2021-02-02 16:29:31,624 INFO com.oracle.vendingmachine.DispenceCoinServiceTests [main] Test case where user provide input £20 
+2021-02-02 16:29:31,627 INFO com.oracle.vendingmachine.repository.CoinRepository [main] With draw coins details -> {FIVEPOUND=4}
+2021-02-02 16:29:31,628 INFO com.oracle.vendingmachine.repository.CoinRepository [main] Coin inventory status after withdrawl coins -> {FIVEPOUND=496, ONEPOUND=100, TWOPOUND=300}
+2021-02-02 16:29:31,638 INFO com.oracle.vendingmachine.DispenceCoinServiceTests [main] Test case where user provide input £19 
+2021-02-02 16:29:31,639 INFO com.oracle.vendingmachine.repository.CoinRepository [main] With draw coins details -> {FIVEPOUND=3, TWOPOUND=2}
+2021-02-02 16:29:31,639 INFO com.oracle.vendingmachine.repository.CoinRepository [main] Coin inventory status after withdrawl coins -> {FIVEPOUND=493, ONEPOUND=100, TWOPOUND=298}
+2021-02-02 16:29:31,648 INFO com.oracle.vendingmachine.DispenceCoinServiceTests [main] Test case where user provide input £100 
+2021-02-02 16:29:31,649 INFO com.oracle.vendingmachine.repository.CoinRepository [main] With draw coins details -> {FIVEPOUND=20}
+2021-02-02 16:29:31,649 INFO com.oracle.vendingmachine.repository.CoinRepository [main] Coin inventory status after withdrawl coins -> {FIVEPOUND=473, ONEPOUND=100, TWOPOUND=298}
+2021-02-02 16:29:31,659 INFO com.oracle.vendingmachine.DispenceCoinServiceTests [main] Test case where user provide input £1000 
+2021-02-02 16:29:31,672 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.oracle.vendingmachine.InitialCoinInventorySetupTests], using SpringBootContextLoader
+2021-02-02 16:29:31,674 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.oracle.vendingmachine.InitialCoinInventorySetupTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-02 16:29:31,675 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.oracle.vendingmachine.InitialCoinInventorySetupTests]: InitialCoinInventorySetupTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-02-02 16:29:31,679 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.oracle.vendingmachine.VendingmachineApplication for test class com.oracle.vendingmachine.InitialCoinInventorySetupTests
+2021-02-02 16:29:31,684 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-02-02 16:29:31,687 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6a6f6c7e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6c5ddccd, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1dbd580, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6c101cc1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7d0d91a1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7fb48179, org.springframework.test.context.event.EventPublishingTestExecutionListener@201c3cda, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4c86da0c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5d97caa4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6732726, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@474821de, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3d64c581, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5ec5ea63]
+2021-02-02 16:29:31,696 INFO com.oracle.vendingmachine.InitialCoinInventorySetupTests [main] Test case to display coin inventory status
+2021-02-02 16:29:31,699 INFO com.oracle.vendingmachine.service.VendingMachineServiceImpl [main] CoinInventoryStatusResponse [coinInventory=[CoinInventory [coin=ONEPOUND, quantity=100], CoinInventory [coin=TWOPOUND, quantity=200]], status=success]
+2021-02-02 16:29:31,712 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.oracle.vendingmachine.RegisterCoinsTests], using SpringBootContextLoader
+2021-02-02 16:29:31,715 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.oracle.vendingmachine.RegisterCoinsTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-02 16:29:31,716 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.oracle.vendingmachine.RegisterCoinsTests]: RegisterCoinsTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-02-02 16:29:31,720 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.oracle.vendingmachine.VendingmachineApplication for test class com.oracle.vendingmachine.RegisterCoinsTests
+2021-02-02 16:29:31,726 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-02-02 16:29:31,728 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2d64c100, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@69d45cca, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2fdf17dc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6e6d4780, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@650ae78c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2e73d5eb, org.springframework.test.context.event.EventPublishingTestExecutionListener@79c5460e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7d904ff1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4f94e148, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7ff8a9dc, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2cde651b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@534e58b6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3bb87d36]
+2021-02-02 16:29:31,739 INFO com.oracle.vendingmachine.RegisterCoinsTests [main] Test case to register the coins
+2021-02-02 16:29:31,741 INFO com.oracle.vendingmachine.repository.CoinRepository [main] Register coins details -> {ONEPOUND=10, TWOPOUND=10}
+2021-02-02 16:29:31,743 INFO com.oracle.vendingmachine.repository.CoinRepository [main] Coin inventory status after withdrawl coins -> {ONEPOUND=110, TWOPOUND=210}
+2021-02-02 16:29:31,744 INFO com.oracle.vendingmachine.service.VendingMachineServiceImpl [main] CoinInventoryStatusResponse [coinInventory=[CoinInventory [coin=ONEPOUND, quantity=110], CoinInventory [coin=TWOPOUND, quantity=210]], status=success]
+2021-02-02 16:29:31,775 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 16:31:04,278 INFO org.springframework.boot.StartupInfoLogger [main] Starting RegisterCoinsTests using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 8096 (started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 16:31:04,293 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-02 16:31:04,323 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-02-02 16:31:07,669 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 16:31:10,008 INFO org.springframework.boot.StartupInfoLogger [main] Started RegisterCoinsTests in 6.5 seconds (JVM running for 8.818)
+2021-02-02 16:31:10,512 INFO com.oracle.vendingmachine.RegisterCoinsTests [main] Test case to register the coins
+2021-02-02 16:31:10,516 INFO com.oracle.vendingmachine.repository.CoinRepository [main] Register coins details -> {TWOPOUND=10, ONEPOUND=10}
+2021-02-02 16:31:10,518 INFO com.oracle.vendingmachine.repository.CoinRepository [main] Coin inventory status after withdrawl coins -> {TWOPOUND=310, FIVEPOUND=500, ONEPOUND=110}
+2021-02-02 16:31:10,527 INFO com.oracle.vendingmachine.service.VendingMachineServiceImpl [main] CoinInventoryStatusResponse [coinInventory=[CoinInventory [coin=TWOPOUND, quantity=310], CoinInventory [coin=FIVEPOUND, quantity=500], CoinInventory [coin=ONEPOUND, quantity=110]], status=success]
+2021-02-02 16:31:10,568 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-02 17:05:28,383 INFO org.springframework.boot.StartupInfoLogger [main] Starting CoinInventoryStatusTests using Java 1.8.0_271 on DESKTOP-709G8R4 with PID 10728 (started by kareem in C:\kareem\Oracle\vendingmachine)
+2021-02-02 17:05:28,391 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-02-02 17:05:28,396 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-02-02 17:05:31,893 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-02 17:05:34,267 INFO org.springframework.boot.StartupInfoLogger [main] Started CoinInventoryStatusTests in 6.684 seconds (JVM running for 9.157)
+2021-02-02 17:05:34,941 INFO com.oracle.vendingmachine.CoinInventoryStatusTests [main] Test case to display coin inventory status
+2021-02-02 17:05:34,945 INFO com.oracle.vendingmachine.service.VendingMachineServiceImpl [main] CoinInventoryStatusResponse [coinInventory=[CoinInventory [coin=ONEPOUND, quantity=100], CoinInventory [coin=TWOPOUND, quantity=300], CoinInventory [coin=FIVEPOUND, quantity=500]], status=success]
+2021-02-02 17:05:34,976 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.oracle.vendingmachine.DispenceCoinServiceTests], using SpringBootContextLoader
+2021-02-02 17:05:34,978 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.oracle.vendingmachine.DispenceCoinServiceTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-02 17:05:34,978 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.oracle.vendingmachine.DispenceCoinServiceTests]: DispenceCoinServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-02-02 17:05:34,983 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.oracle.vendingmachine.VendingmachineApplication for test class com.oracle.vendingmachine.DispenceCoinServiceTests
+2021-02-02 17:05:34,990 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-02-02 17:05:34,993 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@70211df5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4c5228e7, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@38e7ed69, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@806996, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@78b612c6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@257e0827, org.springframework.test.context.event.EventPublishingTestExecutionListener@22752544, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@21ba2445, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@69d23296, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3c3820bb, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@376c7d7d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4784efd9, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3fba233d]
+2021-02-02 17:05:35,007 INFO com.oracle.vendingmachine.DispenceCoinServiceTests [main] Test case where user provide input £0 
+2021-02-02 17:05:35,009 ERROR com.oracle.vendingmachine.service.VendingMachineServiceImpl [main]  DispenseCoin Request is not valid request
+2021-02-02 17:05:35,020 INFO com.oracle.vendingmachine.DispenceCoinServiceTests [main] Test case where user provide input £20 
+2021-02-02 17:05:35,023 INFO com.oracle.vendingmachine.repository.CoinRepository [main] With draw coins details -> {FIVEPOUND=4}
+2021-02-02 17:05:35,024 INFO com.oracle.vendingmachine.repository.CoinRepository [main] Coin inventory status after withdrawl coins -> {ONEPOUND=100, TWOPOUND=300, FIVEPOUND=496}
+2021-02-02 17:05:35,036 INFO com.oracle.vendingmachine.DispenceCoinServiceTests [main] Test case where user provide input £19 
+2021-02-02 17:05:35,036 INFO com.oracle.vendingmachine.repository.CoinRepository [main] With draw coins details -> {TWOPOUND=2, FIVEPOUND=3}
+2021-02-02 17:05:35,037 INFO com.oracle.vendingmachine.repository.CoinRepository [main] Coin inventory status after withdrawl coins -> {ONEPOUND=100, TWOPOUND=298, FIVEPOUND=493}
+2021-02-02 17:05:35,046 INFO com.oracle.vendingmachine.DispenceCoinServiceTests [main] Test case where user provide input £100 
+2021-02-02 17:05:35,047 INFO com.oracle.vendingmachine.repository.CoinRepository [main] With draw coins details -> {FIVEPOUND=20}
+2021-02-02 17:05:35,048 INFO com.oracle.vendingmachine.repository.CoinRepository [main] Coin inventory status after withdrawl coins -> {ONEPOUND=100, TWOPOUND=298, FIVEPOUND=473}
+2021-02-02 17:05:35,065 INFO com.oracle.vendingmachine.DispenceCoinServiceTests [main] Test case where user provide input £1000 
+2021-02-02 17:05:35,074 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.oracle.vendingmachine.InitialCoinInventorySetupTests], using SpringBootContextLoader
+2021-02-02 17:05:35,075 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.oracle.vendingmachine.InitialCoinInventorySetupTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-02 17:05:35,076 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.oracle.vendingmachine.InitialCoinInventorySetupTests]: InitialCoinInventorySetupTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-02-02 17:05:35,080 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.oracle.vendingmachine.VendingmachineApplication for test class com.oracle.vendingmachine.InitialCoinInventorySetupTests
+2021-02-02 17:05:35,083 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-02-02 17:05:35,085 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3b48e183, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@514de325, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@30c1da48, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@43a65cd8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3f1ef9d6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@17461db, org.springframework.test.context.event.EventPublishingTestExecutionListener@3fd9e827, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4e682398, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@670b3ca, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@24a86066, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@54402c04, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5b3bb1f7, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@58d6b7b9]
+2021-02-02 17:05:35,093 INFO com.oracle.vendingmachine.InitialCoinInventorySetupTests [main] Test case to display coin inventory status
+2021-02-02 17:05:35,095 INFO com.oracle.vendingmachine.service.VendingMachineServiceImpl [main] CoinInventoryStatusResponse [coinInventory=[CoinInventory [coin=ONEPOUND, quantity=100], CoinInventory [coin=TWOPOUND, quantity=200]], status=success]
+2021-02-02 17:05:35,101 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.oracle.vendingmachine.RegisterCoinsTests], using SpringBootContextLoader
+2021-02-02 17:05:35,103 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.oracle.vendingmachine.RegisterCoinsTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-02 17:05:35,103 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.oracle.vendingmachine.RegisterCoinsTests]: RegisterCoinsTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-02-02 17:05:35,106 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.oracle.vendingmachine.VendingmachineApplication for test class com.oracle.vendingmachine.RegisterCoinsTests
+2021-02-02 17:05:35,110 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-02-02 17:05:35,112 INFO org.springframework.test.context.support.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1dbd580, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6c101cc1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7d0d91a1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7fb48179, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@201c3cda, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4c86da0c, org.springframework.test.context.event.EventPublishingTestExecutionListener@5d97caa4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6732726, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@474821de, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3d64c581, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5ec5ea63, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4190bc8a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@47d023b7]
+2021-02-02 17:05:35,122 INFO com.oracle.vendingmachine.RegisterCoinsTests [main] Test case to register the coins
+2021-02-02 17:05:35,124 INFO com.oracle.vendingmachine.repository.CoinRepository [main] Register coins details -> {ONEPOUND=10, TWOPOUND=10}
+2021-02-02 17:05:35,125 INFO com.oracle.vendingmachine.repository.CoinRepository [main] Coin inventory status after withdrawl coins -> {ONEPOUND=110, TWOPOUND=210}
+2021-02-02 17:05:35,126 INFO com.oracle.vendingmachine.service.VendingMachineServiceImpl [main] CoinInventoryStatusResponse [coinInventory=[CoinInventory [coin=ONEPOUND, quantity=110], CoinInventory [coin=TWOPOUND, quantity=210]], status=success]
+2021-02-02 17:05:35,142 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
